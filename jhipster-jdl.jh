@@ -9,13 +9,11 @@ entity Project {
     numStudent Integer
     schedule String
     status String
-	Period Long
 }
 
 entity Team {
 	name String
 	status String
-	Project Long
 }
 
 entity Spring {
@@ -23,7 +21,6 @@ entity Spring {
     starDate Instant
     endDate Instant	
     status String
-	team Long
 }
 
 entity Student {
@@ -31,8 +28,6 @@ entity Student {
 	lastName String
     role String
     status String
-	team Long
-	story Long
 }
 
 entity Story {
@@ -40,14 +35,12 @@ entity Story {
 	name String,
 	description String,
 	status String,
-	spring Long
 }
 
 entity Review {
 	timestamp Instant,
 	comment String,
 	status String,
-	story Long
 }
 
 relationship OneToMany {
