@@ -27,9 +27,9 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: postgres://cemousuzzbclmk:a354ee7fd24cfb8bea43352bce787018fe9472c53e88c6d77657572d937228f9@ec2-54-225-242-183.compute-1.amazonaws.com:5432/d26e29phkvvvt5
-        username: cemousuzzbclmk
-        password: a354ee7fd24cfb8bea43352bce787018fe9472c53e88c6d77657572d937228f9
+        url: postgres://ylvtscxdienxdf:83e4a24c7f53c5fc0ccaa6a1068e11b78269bf9ba0673125edd618fac384551a@ec2-50-17-231-192.compute-1.amazonaws.com:5432/d4apard4fkmvle
+        username: ylvtscxdienxdf
+        password: 83e4a24c7f53c5fc0ccaa6a1068e11b78269bf9ba0673125edd618fac384551a
         hikari:
             poolName: Hikari
             auto-commit: false
