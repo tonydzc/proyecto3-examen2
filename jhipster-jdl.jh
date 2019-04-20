@@ -1,0 +1,61 @@
+entity Period {
+	starDate Instant
+    endDate Instant
+    name String
+}
+
+entity Project {
+	name String
+    numStudent Integer
+    schedule String
+    status String
+	Period Long
+}
+
+entity Team {
+	name String
+	status String
+	Project Long
+}
+
+entity Spring {
+	name String
+    starDate Instant
+    endDate Instant	
+    status String
+	team Long
+}
+
+entity Student {
+	name String
+	lastName String
+    role String
+    status String
+	team Long
+	story Long
+}
+
+entity Story {
+	code String,
+	name String,
+	description String,
+	status String,
+	spring Long
+}
+
+entity Review {
+	timestamp Instant,
+	comment String,
+	status String,
+	story Long
+}
+
+relationship OneToMany {
+	Period{project} to Project
+	Project{team} to Team
+	Team{spring} to Spring
+	Team{student} to Student
+	Story{student} to Student
+	Story{review} to Review
+}
+
